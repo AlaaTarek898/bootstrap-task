@@ -1,0 +1,1297 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap task</title>
+
+   
+    <link
+      rel="stylesheet "
+      href="./fontawesome/fontawesome-free-6.2.0-web/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/564c9b599c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+     
+    <link rel="stylesheet"
+     href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+       crossorigin="" />
+<script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+ integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+  crossorigin=""></script>
+  <script defer  src="/mapping.js"></script>
+
+ 
+  </head>
+  <body>
+  
+  
+    <!--------------------------------------------slider section---........------------------------------>
+
+    <section id="home" class="home img-fluid col-md-12 col-sm-4 col-xs-12 mb-5">
+      <div class="overlay all_overlay">
+        <div class="container">
+          <div class="row">
+            <header id="main_menu" class="header navbar-fixed-top">
+              <div class="container border-bottom">
+                <div class="row">
+                  <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                      <div class="logo container-fluid navbar-fixed-top">
+                        <a class=" nav-logo" href="#">MOGO</a>
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </div>
+                      <div
+                        class="navlist collapse navbar-collapse  "
+                        id="navbarSupportedContent"
+                      >
+                        <ul class="navbar-nav navbar-right  align-items-baseline ">
+                          <li class="nav-item">
+                            <a class="nav-link "  href="#"
+                              >About</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">service</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+        
+                          <li class="nav-item">
+                            <a class="nav-link "
+                              ><i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+        
+                          <li class="nav-item">
+                            <a class="nav-link "
+                              ><i class="fa-solid fa-magnifying-glass"></i>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </header>
+
+    <div class="main-slider">
+      <div class=" container">
+        <div class="row">
+                    <div class="col-sm-12 ">
+              <div class="carousel-caption d-none d-md-block">
+               
+
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide "
+                  data-bs-ride="false"
+                >
+                  <div class="carousel-indicators ">
+                    <div class=" d-flex flex-column-reverse align-items-center ">
+                    <div>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+
+                 
+                  <div class="carousel-inner  mb-5 col-md-6 col-sm-4 col-lg-5 ">
+                    <div class="carousel-item active">
+                      <div class="  d-none d-md-block " >
+                        <h5>Creative Template</h5>
+                        <p>Welcome to MoGo</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class=" d-none d-md-block ">
+                        <h5>Creative Template</h5>
+                        <p>Welcome to MoGo</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-none d-md-block ">
+                        <h5>Creative Template</h5>
+                        <p>Welcome to MoGo</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------------pic hoover------------------------------------------------->
+      <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <div class="col-md-12  d-flex flex-column align-content-center">
+              <h3>what we do</h3>
+              <h1 class=" mb-5">story about us</h1>
+              <h6 class=" text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h6>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12 g-3  ">
+            <div class="single_about">
+              <div class="single_about_img">
+                <img src="./assets/img1.jpg" alt="" />
+              </div>
+              <div class="single_about_img_overlay all_overlay">
+                <div  class=" d-flex flex-column  ">
+                 <i class="fa-solid fa-people-group fa-3x text-center"></i>
+                 <h5 class=" text-center "> super team</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12 g-3">
+            <div class="single_about">
+              <div class="single_about_img">
+                <img src="./assets/img2.jpg" alt="" />
+              </div>
+              <div class="single_about_img_overlay all_overlay">
+                <div  class=" d-flex flex-column  ">
+                  <i class="fa-solid fa-people-group fa-3x text-center"></i>
+                  <h5 class=" text-center "> super team</h5>
+                 </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12 g-3" >
+            <div class="single_about">
+              <div class="single_about_img">
+                <img src="./assets/img3.jpg" alt="" />
+              </div>
+              <div class="single_about_img_overlay all_overlay">
+
+                <div  class=" d-flex flex-column  ">
+                  <i class="fa-solid fa-people-group fa-3x text-center"></i>
+                  <h5 class=" text-center "> super team</h5>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!-----------------------------------------------Statics-------------------------------------------->
+  <section class=" mb-5 statics">
+      <div class="container">
+        <div class="row flex">
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class=" states d-flex flex-column align-content-center justify-content-center mt-4 mb-4 text-light text-light">
+              <h2>42</h2>
+              <p> web design projects </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg text-light" >
+            <div class="states d-flex flex-column align-content-center justify-content-center mt-4 mb-4">
+              <h2>123</h2>
+              <p> happy client </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg text-light ">
+            <div class="states d-flex flex-column align-content-center justify-content-center mt-4 mb-4">
+              <h2>15</h2>
+              <p> award winner</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg text-light">
+            <div class="states d-flex flex-column align-content-center justify-content-center mt-4 mb-4">
+              <h2>99</h2>
+              <p> cup of coffee </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg text-light">
+            <div class="states d-flex flex-column align-content-center justify-content-center mt-4 mb-4">
+              <h2>24</h2>
+              <p> member </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!--------------------------------------------------amazing servises------------------------------------------------------------->
+       <section class="services-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="title text-center">
+              <h3>we work with</h3>
+              <h1>amazing services</h1>
+            </div>
+          </div>
+          <div class=" service col-sm-12 col-lg-4 ">
+            <div class="d-flex  align-items-baseline justify-content-start g-3">
+              <div class="img-wrap ">
+                <i class="fa fa-clock-o  me-2"></i>
+              </div>
+              <div class="service-info">
+                <h2>photographery</h2>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-lg-4  ">
+            <div class="service d-flex align-items-baseline g-3">
+              <div class="img-wrap ">
+                <i class="fa-solid fa-object-group me-2" ></i>
+              </div>
+              <div class="service-info">
+                <h2>web designer</h2>
+                <h6 >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-6 col-sm-12 col-lg-4  ">
+            <div class="service d-flex   align-items-baseline g-3">
+              <div class="img-wrap ">
+                <i class="fa-solid fa-mug-hot me-2"></i>
+              </div>
+              <div class="service-info">
+                <h2>Creativity</h2>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-lg-4">
+            <div class="service d-flex align-items-baseline g-3">
+              <div class="img-wrap me-1">
+                <i class="fa-solid fa-chart-simple me-2"></i>
+              </div>
+              <div class="service-info">
+                <h2>seo</h2>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-lg-4 g-3">
+            <div class="service d-flex align-items-baseline">
+              <div class="img-wrap me-1">
+               
+ 
+ 
+<i class="fa-solid fa-house me-2"></i>
+              </div>
+              <div class="service-info">
+                <h2>HTML/CSS</h2>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-lg-4">
+            <div class="service d-flex align-items-baseline g-3">
+              <div class="img-wrap me-1">
+                <i class="fa-brands fa-digital-ocean me-2"></i>
+              </div>
+              <div class="service-info">
+                <h2>digital</h2>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, consectetur?
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+    <!-------------------------------------banner-------------------------------------------------> 
+    <section id="device" class="device mb-5">
+      <div class="home-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="main_device_area text-center">
+                <div class="row">
+                  <div class="head_title text-center">
+                    <h3 class="subtitle">For all devices</h3>
+                    <h1>Unique design</h1>
+                    <div class="separator"></div>
+                  </div>
+
+                  <div class="main_device_content">
+                    <div class="single_device">
+                      <img src="./assets/device-01.png" class=" img-fluid" />
+                      <div class="single_device_two">
+                        <img src="./assets/device-02.png" class=" img-fluid" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!----------------------------------------accordion-------------------------------------------------------->
+     <section class="services-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="title text-center">
+              <h3>Service</h3>
+              <h1 class=" mb-5">WHAT WE DO</h1 >
+             
+
+              <h6>
+                Cupcake ipsum dolor sit amet sesame snaps toffee cupcake. Tart
+                muffin jelly beans gummi bears gummi bears tiramisu ice cream
+                croissant. Candy jelly beans cheesecake icing chocolate cake.
+                Gummi bears lollipop dessert danish.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class=" d-flex flex-wrap justify-content-between">
+            <div class="col-md-6 col-sm-12 col-lg-5">
+              <image class="img-fluid" src="./assets/whatwedo-img.jpg"></image>
+            </div>
+            <div
+              class="accordion col-md-6 col-sm-12 col-lg-5"
+              id="accordionExample"
+            >
+              <div class="accordion-item  accor-style">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <div class="d-flex align-baseline">
+                      <div><i class="fa fa-picture-o me-2"></i></div>
+                      <h2>PHOTOGRAPHY</h2>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <h6 class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum..
+                  </h6>
+                </div>
+              </div>
+              <div class="accordion-item accor-style">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <div class="d-flex align-baseline">
+                      <div><i class="fa fa-map-signs me-2"></i></div>
+                      <h2>creativity</h2>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <h6 class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </h6>
+                </div>
+              </div>
+              <div class="accordion-item accor-style">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <div class="d-flex align-baseline">
+                      <div><i class="fa fa-bullseye me-2"></i></div>
+                      <h2>web design</h2>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <h6 class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!--------------------------------------text bannar--------------------------------------------------------------->
+      <section class="mb-5 text-banner pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="states mt-4 mb-4">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                        <i class="fa-sharp fa-solid fa-image fa-6x"></i>
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                        <i class="fa-sharp fa-solid fa-image fa-6x"></i>
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                        <i class="fa-sharp fa-solid fa-image fa-6x"></i>
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev "
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!-------------------------------------------who are we------------------------------------------------------------------------>
+     <section class="services-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="title text-center">
+              <h3>Who we are</h3>
+              <h1 class=" mb-5">MEET OUR TEAM</h1>
+             
+              <h6>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!---------------------------------------------our team-------------------------------------------------------------------------------->
+      <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 mb-auto">
+            <div class="single_about">
+              <div class="single_about_img">
+                <img src="./assets/ourteam-01.jpg" class=' mb-3'/>
+              </div>
+              <div class="single_about_img_overlay all_overlay ">
+                <div class=" d-flex align-content-center justify-content-center items  ">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-square-twitter"></i>
+                  <i class="fa-brands fa-square-pinterest"></i>
+                </div>
+              </div>
+            </div >
+            <div class="text-center">
+              <h5>MATTHEW DIX</h5>
+              <h6>Graphic Design</h6>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12 mb-auto">
+            <div class="single_about">
+              <div class="single_about_img ">
+                <img src="./assets/ourteam-02.jpg" class=' mb-3'/>
+              </div>
+              <div class="single_about_img_overlay all_overlay">
+                <div class=" d-flex align-content-center justify-content-center items  ">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                  </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h5>MATTHEW DIX</h5>
+              <h6>Graphic Design</h6>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12 mb-auto">
+            <div class="single_about">
+              <div class="single_about_img">
+                <img src="./assets/ourteam-03.jpg" class=' mb-3'/>
+              </div>
+              <div class="single_about_img_overlay all_overlay">
+                <div class=" d-flex align-content-center justify-content-center items  ">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                  </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h5>MATTHEW DIX</h5>
+              <h6>Graphic Design</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!--------------------------------------------------projects-------------------------------------------------------------------------->
+      <section class="text-banner mb-5 statics">
+      <div class="container">
+        <div class="row flex">
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class="states mt-4 mb-4">
+              <img src="./assets/logo-01.png" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class="states mt-4 mb-4">
+              <img src="./assets/logo-02.png" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class="states mt-4 mb-4">
+              <img src="./assets/logo-03.png" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class="states mt-4 mb-4">
+              <img src="./assets/logo-04.png" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg">
+            <div class="states mt-4 mb-4">
+              <img src="./assets/logo-05.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!---------------------------------------------------some of our work------------------------------------------------------------------------------------->
+      <section class="services-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="title text-center">
+              <h3>Who we do</h3>
+              <h1 class=" mb-5">SOME OF OUR WORK</h1>
+           
+
+              <h6>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!------------------------------------------------------GRID------------------------------------------------------------->
+      <section class=" mb-5">
+      <div class="container-fluid">
+        <div class="row flex">
+          <div id="images">
+            <div class=" d-flex flex-wrap-sm-start   ">
+              <div class="d-flex flex-column ">
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-01.jpg" class=" img-fluid" />
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                    <i class="fa-regular fa-image"></i>
+                  </div>
+                  </div>
+                </div>
+                
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-05.jpg" class=" img-fluid" />
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="d-flex flex-column">
+                
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-02.jpg"class=" img-fluid" />
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-06.jpg"class=" img-fluid" />
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-03.jpg" class=" img-fluid" />
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-04.jpg" class=" img-fluid"/>
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="single_about">
+                  <div class="single_about_img">
+                    <img src="./assets/gal-07.jpg" class=" img-fluid"/>
+                  </div>
+                  <div class="single_about_img_overlay all_overlay">
+                    <div  class="d-flex align-content-center justify-content-center items ">
+                      <i class="fa-regular fa-image"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!--------------------------------------------testnominal slider------------------------------------------------------>
+    <section class="mb-5 text-banner pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="states mt-4 mb-4">
+              <div
+                id="carouselExampleControls2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                      <img class=" rounded-circle me-5" src="./assets/testi-01.jpg">
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                      <img class=" rounded-circle" src="./assets/testi-01.jpg">
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                      <div class="col-md-2 col-sm-2 col-lg-2">
+                      <img class=" rounded-circle" src="./assets/testi-01.jpg">
+                      </div>
+                      <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h6>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Impedit reprehenderit deserunt id nostrum
+                          ratione consequuntur in animi nulla unde, officiis
+                          natus aspernatur eligendi doloremque, velit vel fuga
+                          illo, maxime necessitatibus.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+               
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls2"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls2"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!------------------------------------------------testnominal------------------------------------------------------------>
+    <section id="device" class="device mb-3">
+      <div class="home-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="main_device_area text-center">
+                <div class="row">
+                  <div class="head_title text-center">
+                  
+                    <h3>Happy Clients</h3>
+                    <h1>WHAT PEOPLE SAY</h1>
+                  
+                  </div>
+               
+                  <div class="card mb-3 " style="max-width: 540px; background: transparent; border: none; ">
+                    <div class="row g-0 d-flex align-content-center">
+                      <div class="col-md-4">
+                        <img src="./assets/client-01.jpg" class="img-fluid  rounded-circle" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h5 class="card-title ">
+                            MATTHEW DIX</h5>
+                            <p class=" text-muted">Graphic Design</p>
+                          <p class="card-text ">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="card mb-3" style="max-width: 540px; background: transparent; border: none;">
+                    <div class="row g-0 d-flex align-content-center">
+                      <div class="col-md-4">
+                        <img src="./assets/client-01.jpg" class="img-fluid  rounded-circle" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h5 class="card-title ">
+                            MATTHEW DIX</h5>
+                            <p class=" text-muted">Graphic Design</p>
+                          <p class="card-text ">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3" style="max-width: 540px; background: transparent; border: none;">
+                    <div class="row g-0 d-flex align-content-center">
+                      <div class="col-md-4">
+                        <img src="./assets/client-01.jpg" class="img-fluid  rounded-circle" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h5 class="card-title ">
+                            MATTHEW DIX</h5>
+                            <p class=" text-muted">Graphic Design</p>
+                          <p class="card-text ">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3" style="max-width: 540px; background: transparent; border: none;">
+                    <div class="row g-0 d-flex align-content-center">
+                      <div class="col-md-4">
+                        <img src="./assets/client-01.jpg" class="img-fluid  rounded-circle" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h5 class="card-title ">
+                            MATTHEW DIX</h5>
+                            <p class=" text-muted">Graphic Design</p>
+                          <p class="card-text ">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+    <!----------------------------------------------stories---------------------------------------------------->
+    <section class="services-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="title text-center">
+              <h3>Our stories</h3>
+              <h1 clalss=" mb-5">LATEST BLOG</h1>
+             
+
+       
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+
+
+     <section class="mb-5">
+      <div class="container">
+        <div class="row ">
+          <div class=" d-flex flex-row  justify-content-between flex-wrap ">
+          
+          <div class="card position-relative" style="width: 24rem;" >
+            <img src="./assets/blogimg-01.jpg" class="card-img-top img-fluid " >
+            <div class=" bg-info p-2 w-auto h-auto d-flex flex-column position-absolute  ">
+              <h3>12</h3>
+              <p>JAN</p>
+            </div>
+            <div class="card-body ">
+              <p class="card-text text-muted"> <h5>SLOREM IPSUM DOLOR SIT AMET</h5>
+
+                Consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <div class=" d-flex  align-items-baseline border-top" >
+              <i class="fa-solid fa-eye me-2"></i> <p class=" me-2">552</p>
+              <i class="fa-solid fa-comment-dots me-2"></i> <p>17</p>
+            </div>
+           
+          </div>
+          <div class=" card  position-relative " style="width: 24rem;">
+            <img src="./assets/blogimg-01.jpg" class="card-img-top " >
+            <div class=" bg-info p-2 w-auto h-auto d-flex flex-column position-absolute  ">
+              <h3>12</h3>
+              <p>JAN</p>
+            </div>
+            <div class="card-body ">
+              <p class="card-text text-muted"> <h5>SLOREM IPSUM DOLOR SIT AMET</h5>
+
+                Consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <div class=" d-flex  align-items-baseline border-top" >
+              <i class="fa-solid fa-eye me-2"></i> <p class=" me-2">552</p>
+              <i class="fa-solid fa-comment-dots me-2"></i> <p>17</p>
+            </div>
+           
+          </div>
+          <div class="card  position-relative " style="width: 24rem;">
+            <img src="./assets/blogimg-01.jpg" class="card-img-top" >
+            <div class=" bg-info p-2 w-auto h-auto d-flex flex-column position-absolute  ">
+              <h3>12</h3>
+              <p>JAN</p>
+            </div>
+            <div class="card-body ">
+              <p class="card-text text-muted"> <h5>SLOREM IPSUM DOLOR SIT AMET</h5>
+
+                Consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <div class=" d-flex  align-items-baseline border-top" >
+              <i class="fa-solid fa-eye me-2"></i> <p class=" me-2">552</p>
+              <i class="fa-solid fa-comment-dots me-2"></i> <p>17</p>
+            </div>
+           
+          </div>
+      
+        </div>
+
+        </div>
+      </div>
+    </section>  
+<!------------------------------------------------map----------------------------------------------------------------------->
+ <section id="device" class="device mb-5">
+  <div class="home-overlay" id="map">
+    <div class="container">
+      <div class="row">
+        <div class=" text-center p-5">
+       <button id="btn-map"  > <i class="fa-solid fa-location-dot fa-9x"></i></button>
+        <h4>Open Map</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>   
+<!------------------------------------------------footer-------------------------------------------------------------->
+  <section class="mb-5">
+  <div class="container">
+    <div class="row ">
+      <div class=" d-flex justify-content-between flex-wrap">
+      
+     <div class=" d-flex flex-column justify-content-between" style="width: 24rem;">
+      <div><img src=".//assets/footer-logo.png"></div>
+      <div ><h6 class=" mb-3">Cake I love jujubes pie jelly-o icing cheesecake. Tart tootsie roll marshmallow tart I love dragée. Cookie sugar plum sesame snaps tart tiramisu.</h6></div>
+          <h5 class=" fw-bond"  >15k follower</h5>
+      <div class=" d-flex border-top align-items-baseline ">
+        <p class=" me-2">follow us</p>
+        <i class="fa-brands fa-facebook me-2"></i>
+        <i class="fa-brands fa-square-instagram me-2"></i>
+        <i class="fa-brands fa-square-twitter me-2"></i>
+        <i class="fa-brands fa-square-pinterest me-2"></i>
+        <i class="fa-brands fa-youtube me-2"></i>
+      </div>
+      <div><input type="text" placeholder="Your Email...">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+     </div>
+
+     <div class=" d-flex flex-column"  style="width: 24rem;">
+     <h4>BLOGS</h4>
+       <div>
+     <div class=" mb-3" style="max-width: 540px; ">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/footerblog-01.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div >
+            
+            <p class="">TART MARSHMALLOW LIQUORICE SOUFFLÉ CHOCOLATE BAR SOUFFLÉ</p>
+            <p class=""><small class="text-muted">January 9, 2016</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div>
+    <div class=" mb-3" style="max-width: 540px;">
+     <div class="row g-0">
+       <div class="col-md-4">
+         <img src="./assets/footerblog-02.jpg" class="img-fluid rounded-start" alt="...">
+       </div>
+       <div class="col-md-8">
+         <div >
+           
+           <p >APPLE PIE COOKIE FRUITCAKE I LOVE. MACAROON CHEESECAKE</p>
+           <p><small class="text-muted">January 9, 2016</small></p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>  
+ <div>
+  <div class=" mb-3" style="max-width: 540px;">
+   <div class="row g-0">
+     <div class="col-md-4">
+       <img src="./assets/footerblog-03.jpg" class="img-fluid rounded-start" alt="...">
+     </div>
+     <div class="col-md-8">
+       <div >
+         
+         <p >APPLE PIE COOKIE FRUITCAKE I LOVE. MACAROON CHEESECAKE</p>
+         <p ><small class="text-muted">January 9, 2016</small></p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>  
+
+     </div>
+  
+
+
+     <div class=" d-flex flex-column"  style="width: 24rem;">
+      <p>INSTAGRAM</p>
+      <img src="./assets/footerIG-img.jpg">
+
+
+
+
+     </div>
+    </div>
+
+
+
+
+    </div>
+  </div>
+</section> 
+ 
+
+
+
+
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

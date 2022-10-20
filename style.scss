@@ -1,0 +1,339 @@
+
+
+$basic-white:#ffffff;
+$basic-black:#333333;
+$p-text: #999999;
+$main-blue: #95e1d3;
+
+
+@mixin fontFamily ($family, $weight){
+@font-face {
+    font-family: '#{$family}-#{$weight}';
+    src:url('./font/#{$family}-#{$weight}.ttf') format('truetype');
+}}
+@include fontFamily ('KaushanScript', 'Regular');
+@include fontFamily ('KaushanScript', 'Begular');
+@include fontFamily('Montserrat', 'Regular');
+@include fontFamily('Roboto', 'Regular');
+
+
+@mixin fontSize ($size) {
+    font-size: #{$size/16}rem;}
+    h3{font-family: 'KaushanScript-Regular';
+        color:$basic-black;
+        font-weight: 400;
+        
+        @include fontSize(24)
+        
+        }
+ /***********************************************************************************/       
+        h1{font-family: "Montserrat-Bold";
+            text-transform: uppercase;
+            color:$basic-black;
+            font-weight: 700;
+         ;
+            position: relative;
+            @include fontSize(30);
+        
+        } 
+        h1::after{
+            content: ' ';
+                color:red;
+                position: absolute;
+                width: 10%;
+                left:45%;
+                border-bottom: solid 5px;
+                position: absolute;
+                top: 150%;
+                z-index: 1;
+                ;
+           ;}
+        
+          h6{
+            font-family: 'Roboto-Regular';
+          color:$p-text;
+         height: 130px;
+        line-height: 24px;
+        font-weight: 400;
+        
+        @include fontSize(15);
+          }  
+        i{color:$main-blue}
+        
+
+        *{
+            box-sizing: border-box;
+        
+        }
+/*----------------Nav bar----------------------------------*/
+header{
+    a{font-family: "Montserrat-Regular";
+        font-weight: 700;
+        color:$basic-white;
+        text-decoration: none;
+       @include fontSize(30);
+
+    }
+    .navlist{
+        a{font-family: "Montserrat-Bold";
+          color:$basic-white;
+            @include fontSize(14);
+        margin-left: 50px;
+        }
+    }
+}
+
+
+/*-----------------------main slider---------------------------------------------*/
+.main-slider{
+    color:$basic-white;
+    h5 {
+        font-family: 'KaushanScript-Regular';
+        @include fontSize(72)
+    }
+    p{font-family: "Montserrat-Bold";
+        text-align: center;
+        font-weight: 700px;
+        line-height: 140px;
+        text-transform: uppercase;
+        
+        @include fontSize(150)
+
+    }
+}
+.home{
+    background: url(./assets/homebg.jpg) no-repeat 100% 100% ;
+    background-size: cover;
+     background-position: center center;
+    width:100%;
+    height: 100vh;
+    
+}
+
+
+.all_overlay{
+    background: rgba(219, 116, 117, 0.75); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7475', endColorstr='#e4cd7d',GradientType=0 );
+
+
+}
+.overlay{background-color: rgba(0, 0, 0, 0.3);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+
+
+}
+
+/*------------------------------------------------------------------*/
+.single_about{
+    position: relative;  
+    transition: all 0.6s;
+   
+
+}
+.items{
+    
+        i{ 
+            @include fontSize(50);
+         }
+    
+}
+ .single_about:hover{
+    box-shadow: 6px 6px 9px 1px #95e1d3;  
+}
+.single_about .single_about_img img{
+    width:100%;
+    height: 100%;
+}
+ .single_about .single_about_img_overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    color:#fff;
+    padding-top: 25%;
+    opacity: 0;
+    transition: all 0.6s;
+    
+}
+.single_about:hover .single_about_img_overlay{
+    opacity: 1; 
+    cursor: pointer;
+}
+.single_about .single_about_img_overlay a{
+    color:#fff;
+}
+.single_about .single_about_img_overlay a:hover{
+    color:#fce38a
+}
+
+/****************************************static**********************************************/
+.statics{
+    background-color: $main-blue;
+}
+.states{
+    h2 { 
+text-transform: uppercase;
+color: $basic-white;
+font-weight: 700;
+
+@include fontSize(72);
+    }
+  p{
+    
+text-transform: uppercase;
+color: $basic-white;
+font-weight: 400;
+font-family: "Montserrat";
+
+@include fontSize(14);
+  }  
+}
+/***************************services*********************************************/
+.service{
+
+    h2{font-family: "Montserrat-Bold";
+        color: $basic-black;
+        font-weight: bold;
+        @include fontSize(18);              
+text-transform: uppercase;
+    }
+i{ 
+    
+     @include fontSize(30);
+     font-weight: bolder;
+    
+}
+}
+
+
+
+.icon{
+    width: 300px;
+    height: 500px;
+}
+
+/******************************bannar***********************************/
+
+
+
+
+
+.single_device{
+    position: relative;
+}
+.single_device_two {
+    position: absolute;
+    right: 80px;
+    bottom: -70px;
+    z-index: 99;
+}
+.head_title {
+    margin-bottom: 90px;
+}
+.device .main_device_area {
+    margin-top: 80px;
+}
+.device {
+    background: url(./assets/background.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+/*******************************accordion**************************************/
+.accor-style{
+    i{
+      
+        @include fontSize(30)
+    }
+    h2{font-family: "Montserrat-Bold";
+        text-transform: uppercase;
+color:$basic-black ;
+font-weight: 400;
+
+@include fontSize(20);
+    }
+}
+
+
+/***********************************************************************************************/
+.text-banner{
+    background: #f8f8f8
+}
+
+gal-h4 .largGal {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff !important;
+    text-align: center;
+    margin-top: 35%;
+    margin-bottom: auto;
+    
+}
+
+.gal-h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff !important;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: auto;
+    
+}
+
+.gal-p {
+    color: #fff;
+    text-align: center;
+}
+
+#btn-map{
+    border: none;
+}
+
+/***************************************************/
